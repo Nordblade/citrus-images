@@ -1,11 +1,11 @@
 # ----------------------------------
-# Sparked Host Custom Image
-# Image: ghcr.io/sparkedhost/images:generic-debian
+# Citrusnode Custom Image
+# Image: ghcr.io/nordblade/citrus-images:generic-debian
 # ----------------------------------
 
 FROM debian:bullseye-slim
 
-LABEL author="DevOps Team at Sparked Host" maintainer="sysadmin@sparkedhost.com"
+LABEL author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
 
 ENV DEBIAN_FRONTEND noninteractive
 

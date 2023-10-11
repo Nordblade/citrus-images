@@ -1,11 +1,11 @@
 # ----------------------------------
-# Sparked Host Custom Docker Image
-# Image: ghcr.io/sparkedhost/images:games-rust
+# Citrusnode Custom Docker Image
+# Image: ghcr.io/nordblade/citrus-images:games-rust
 # ----------------------------------
 
 FROM ubuntu:18.04
 
-LABEL author="DevOps Team at Sparked Host" maintainer="sysadmin@sparkedhost.com"
+LABEL author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
 
 ENV DEBIAN_FRONTEND noninteractive
 

@@ -37,7 +37,7 @@ if [ "${LOG4J2_VULN_WORKAROUND}" = 1 ] && [ -z "${FORGE_VERSION}" ]; then
     echo -e "\033[1;33mNOTE: \033[0mThe Log4j2 vulnerability workaround has been enabled. If you're running an unpatched server software build, remember to update ASAP as this workaround may be removed at any time, and is not effective in older versions of the game."
 fi
 
-# SIMD operations (https://github.com/sparkedhost/images/issues/4)
+# SIMD operations (https://github.com/nordblade/citrus-images/issues/4)
 if [ "${SIMD_OPERATIONS}" = 1 ] && [ -z "${FORGE_VERSION}" ]; then
     MODIFIED_STARTUP=$(echo "${MODIFIED_STARTUP}" | sed -E 's/-Xmx([0-9]+)[KMG]?/& --add-modules=jdk.incubator.vector/')
     echo -e "\033[1;33mNOTE: \033[0mSIMD operations are enabled."
@@ -55,7 +55,7 @@ if [ "${AIKAR_FLAGS}" = 1 ]; then
 fi
 
 # Print startup command to console
-echo -e "\033[1;33mcustomer@sparkedhost:~\$\033[0m ${MODIFIED_STARTUP}"
+echo -e "\033[1;33mcustomer@citrusnode:~\$\033[0m ${MODIFIED_STARTUP}"
 
 # Run the server.
 eval ${MODIFIED_STARTUP}

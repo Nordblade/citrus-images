@@ -1,11 +1,11 @@
 # ----------------------------------
-# Sparked Host Custom Image
-# Image: ghcr.io/sparkedhost/images:nodejs-15
+# Citrusnode Custom Image
+# Image: ghcr.io/nordblade/citrus-images:nodejs-15
 # ----------------------------------
 
 FROM        node:15-slim
 
-LABEL       author="DevOps Team at Sparked Host" maintainer="sysadmin@sparkedhost.com"
+LABEL       author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
 
 RUN apt update \
  && apt -y install git gcc g++ ca-certificates dnsutils curl iproute2 ffmpeg procps python3 build-essential libcairo2-dev libpango1.0-dev libgif-dev librsvg2-dev libjpeg62-turbo-dev libc6 libnss3 \

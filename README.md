@@ -4,46 +4,46 @@
 
 ### Java images
 
-- [`java-jre8`](https://github.com/sparkedhost/images/blob/main/java/java-jre8/Dockerfile)
-- [`java-jre11`](https://github.com/sparkedhost/images/blob/main/java/java-jre11/Dockerfile)
-- [`java-jre16`](https://github.com/sparkedhost/images/blob/main/java/java-jre16/Dockerfile)[^eol]
-- [`java-jre17`](https://github.com/sparkedhost/images/blob/main/java/java-jre17/Dockerfile)
-- [`java-jre18`](https://github.com/sparkedhost/images/blob/main/java/java-jre18/Dockerfile)[^eol]
-- [`java-jre19`](https://github.com/sparkedhost/images/blob/main/java/java-jre19/Dockerfile)[^eol]
-- [`java-jre20`](https://github.com/sparkedhost/images/blob/main/java/java-jre20/Dockerfile)
-- [`anti-malware`](https://github.com/sparkedhost/images/blob/main/java/anti-malware/Dockerfile)[^antimalware]
+- [`java-jre8`](https://github.com/nordblade/citrus-images/blob/main/java/java-jre8/Dockerfile)
+- [`java-jre11`](https://github.com/nordblade/citrus-images/blob/main/java/java-jre11/Dockerfile)
+- [`java-jre16`](https://github.com/nordblade/citrus-images/blob/main/java/java-jre16/Dockerfile)[^eol]
+- [`java-jre17`](https://github.com/nordblade/citrus-images/blob/main/java/java-jre17/Dockerfile)
+- [`java-jre18`](https://github.com/nordblade/citrus-images/blob/main/java/java-jre18/Dockerfile)[^eol]
+- [`java-jre19`](https://github.com/nordblade/citrus-images/blob/main/java/java-jre19/Dockerfile)[^eol]
+- [`java-jre20`](https://github.com/nordblade/citrus-images/blob/main/java/java-jre20/Dockerfile)
+- [`anti-malware`](https://github.com/nordblade/citrus-images/blob/main/java/anti-malware/Dockerfile)[^antimalware]
 
 ### Node.js images
 
-- [`nodejs-12`](https://github.com/sparkedhost/images/blob/main/nodejs/nodejs-12/Dockerfile)[^eol]
-- [`nodejs-13`](https://github.com/sparkedhost/images/blob/main/nodejs/nodejs-13/Dockerfile)[^eol]
-- [`nodejs-14`](https://github.com/sparkedhost/images/blob/main/nodejs/nodejs-14/Dockerfile)[^eol]
-- [`nodejs-15`](https://github.com/sparkedhost/images/blob/main/nodejs/nodejs-15/Dockerfile)[^eol]
-- [`nodejs-16`](https://github.com/sparkedhost/images/blob/main/nodejs/nodejs-16/Dockerfile)
-- [`nodejs-17`](https://github.com/sparkedhost/images/blob/main/nodejs/nodejs-17/Dockerfile)[^eol]
-- [`nodejs-18`](https://github.com/sparkedhost/images/blob/main/nodejs/nodejs-18/Dockerfile)
-- [`nodejs-19`](https://github.com/sparkedhost/images/blob/main/nodejs/nodejs-19/Dockerfile)[^eol]
-- [`nodejs-20`](https://github.com/sparkedhost/images/blob/main/nodejs/nodejs-20/Dockerfile)
+- [`nodejs-12`](https://github.com/nordblade/citrus-images/blob/main/nodejs/nodejs-12/Dockerfile)[^eol]
+- [`nodejs-13`](https://github.com/nordblade/citrus-images/blob/main/nodejs/nodejs-13/Dockerfile)[^eol]
+- [`nodejs-14`](https://github.com/nordblade/citrus-images/blob/main/nodejs/nodejs-14/Dockerfile)[^eol]
+- [`nodejs-15`](https://github.com/nordblade/citrus-images/blob/main/nodejs/nodejs-15/Dockerfile)[^eol]
+- [`nodejs-16`](https://github.com/nordblade/citrus-images/blob/main/nodejs/nodejs-16/Dockerfile)
+- [`nodejs-17`](https://github.com/nordblade/citrus-images/blob/main/nodejs/nodejs-17/Dockerfile)[^eol]
+- [`nodejs-18`](https://github.com/nordblade/citrus-images/blob/main/nodejs/nodejs-18/Dockerfile)
+- [`nodejs-19`](https://github.com/nordblade/citrus-images/blob/main/nodejs/nodejs-19/Dockerfile)[^eol]
+- [`nodejs-20`](https://github.com/nordblade/citrus-images/blob/main/nodejs/nodejs-20/Dockerfile)
 
 ### Python images
 
-- [`python-3.6`](https://github.com/sparkedhost/images/blob/main/python/python-3.6/Dockerfile)[^eol]
-- [`python-3.7`](https://github.com/sparkedhost/images/blob/main/python/python-3.7/Dockerfile)[^eol]
-- [`python-3.8`](https://github.com/sparkedhost/images/blob/main/python/python-3.8/Dockerfile)
-- [`python-3.9`](https://github.com/sparkedhost/images/blob/main/python/python-3.9/Dockerfile)
-- [`python-3.10`](https://github.com/sparkedhost/images/blob/main/python/python-3.10/Dockerfile)
-- [`python-3.11`](https://github.com/sparkedhost/images/blob/main/python/python-3.11/Dockerfile)
+- [`python-3.6`](https://github.com/nordblade/citrus-images/blob/main/python/python-3.6/Dockerfile)[^eol]
+- [`python-3.7`](https://github.com/nordblade/citrus-images/blob/main/python/python-3.7/Dockerfile)[^eol]
+- [`python-3.8`](https://github.com/nordblade/citrus-images/blob/main/python/python-3.8/Dockerfile)
+- [`python-3.9`](https://github.com/nordblade/citrus-images/blob/main/python/python-3.9/Dockerfile)
+- [`python-3.10`](https://github.com/nordblade/citrus-images/blob/main/python/python-3.10/Dockerfile)
+- [`python-3.11`](https://github.com/nordblade/citrus-images/blob/main/python/python-3.11/Dockerfile)
 
 ### Game Hosting images
 
-- [`games-rust`](https://github.com/sparkedhost/images/blob/main/games/rust/Dockerfile)
+- [`games-rust`](https://github.com/nordblade/citrus-images/blob/main/games/rust/Dockerfile)
 
 
 ### Generic images
 
-- [`generic-debian`](https://github.com/sparkedhost/images/blob/main/generic/debian/Dockerfile)
-- [`generic-mono`](https://github.com/sparkedhost/images/blob/main/generic/mono/Dockerfile)
-- [`generic-wine`](https://github.com/sparkedhost/images/blob/main/generic/wine/Dockerfile)
+- [`generic-debian`](https://github.com/nordblade/citrus-images/blob/main/generic/debian/Dockerfile)
+- [`generic-mono`](https://github.com/nordblade/citrus-images/blob/main/generic/mono/Dockerfile)
+- [`generic-wine`](https://github.com/nordblade/citrus-images/blob/main/generic/wine/Dockerfile)
 
 
 ## Requesting changes

@@ -1,11 +1,11 @@
 # ----------------------------------
-# Sparked Host Custom Docker Image
-# Image: ghcr.io/sparkedhost/images:java-jre11
+# Citrusnode Custom Docker Image
+# Image: ghcr.io/nordblade/citrus-images:java-jre11
 # ----------------------------------
 
 FROM        debian:bullseye-slim
 
-LABEL       author="DevOps Team at Sparked Host" maintainer="sysadmin@sparkedhost.com"
+LABEL       author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
 
 RUN apt-get update -y \
  && apt-get install fontconfig iproute2 curl ca-certificates tar -y \

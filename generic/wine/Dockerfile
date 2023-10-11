@@ -1,11 +1,11 @@
 # ----------------------------------
-# Sparked Host Custom Docker Image
-# Image: ghcr.io/sparkedhost/images:generic-wine
+# Citrusnode Custom Docker Image
+# Image: ghcr.io/nordblade/citrus-images:generic-wine
 # ----------------------------------
 
 FROM alpine:latest
 
-LABEL author="DevOps Team at Sparked Host" maintainer="sysadmin@sparkedhost.com"
+LABEL author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
 
 RUN apk update
 RUN apk add wget && apk add unzip bash

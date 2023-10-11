@@ -1,11 +1,11 @@
 # ----------------------------------
-# Sparked Host Custom Docker Image
-# Image: ghcr.io/sparkedhost/images:generic-mono
+# Citrusnode Custom Docker Image
+# Image: ghcr.io/nordblade/citrus-images:generic-mono
 # ----------------------------------
 
 FROM debian:bullseye-slim
 
-LABEL author="DevOps Team at Sparked Host" maintainer="sysadmin@sparkedhost.com"
+LABEL author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
 
 RUN apt-get update -y \
  && apt-get install -y fontconfig dirmngr curl ca-certificates openssl git tar tzdata iproute2 \
