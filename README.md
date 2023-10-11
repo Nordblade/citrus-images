@@ -1,6 +1,4 @@
-# Apollo Images
-
-#### Docker images designed for use with Sparked Host's Apollo Panel.
+# Citrus Panel Images
 
 ## Supported tags
 
@@ -39,23 +37,7 @@
 ### Game Hosting images
 
 - [`games-rust`](https://github.com/sparkedhost/images/blob/main/games/rust/Dockerfile)
-- [`games-unturned`](https://github.com/sparkedhost/images/blob/main/games/unturned/Dockerfile)
-- [`games-unturned-preview`](https://github.com/sparkedhost/images/blob/main/games/unturned-preview/Dockerfile)
-- [`games-liteloader-bds`](https://github.com/sparkedhost/images/blob/main/games/liteloader-bds/Dockerfile)
-- [`games-bdsx`](https://github.com/sparkedhost/images/blob/main/games/bdsx/Dockerfile)
-- [`games-source`](https://github.com/sparkedhost/images/blob/main/games/source/Dockerfile)
-- [`games-dotnet`](https://github.com/sparkedhost/images/blob/main/games/dotnet/Dockerfile)
-- [`games-wine-latest`](https://github.com/sparkedhost/images/blob/main/games/wine-latest/Dockerfile)
-- [`games-wine-staging`](https://github.com/sparkedhost/images/blob/main/games/wine-staging/Dockerfile)
-- [`games-proton`](https://github.com/sparkedhost/images/blob/main/games/proton/Dockerfile)
-- [`games-valheim`](https://github.com/sparkedhost/images/blob/main/games/valheim/Dockerfile)
 
-### Bot Hosting images
-
-- [`bot-bastion`](https://github.com/sparkedhost/images/blob/main/bot/bastion/Dockerfile)
-- [`bot-lavalink`](https://github.com/sparkedhost/images/blob/main/bot/lavalink/Dockerfile)
-- [`bot-modmail`](https://github.com/sparkedhost/images/blob/main/bot/modmail/Dockerfile)
-- [`bot-redbot`](https://github.com/sparkedhost/images/blob/main/bot/redbot/Dockerfile)
 
 ### Generic images
 
@@ -63,10 +45,6 @@
 - [`generic-mono`](https://github.com/sparkedhost/images/blob/main/generic/mono/Dockerfile)
 - [`generic-wine`](https://github.com/sparkedhost/images/blob/main/generic/wine/Dockerfile)
 
-### Other images
-
-- [`azul-prime-17`](https://github.com/sparkedhost/images/blob/main/other/azul-prime-17/Dockerfile)
-- [`azul-prime-19`](https://github.com/sparkedhost/images/blob/main/other/azul-prime-19/Dockerfile)
 
 ## Requesting changes
 
