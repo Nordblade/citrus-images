@@ -3,28 +3,27 @@
 # Image: ghcr.io/nordblade/citrus-images:java-jre16
 # ----------------------------------
 
-FROM        debian:bullseye-slim
+# Use Alpine Linux as the base image
+FROM alpine:3.13
 
-LABEL       author="Citrusnode" maintainer="info@citrusnode.com"
+LABEL author="Citrusnode" maintainer="info@citrusnode.com"
 
-RUN apt-get update -y \
- && apt-get install fontconfig iproute2 curl ca-certificates tar -y \
- && useradd -d /home/container -m container \
+RUN apk add --no-cache \
+ && adduser -D -h /home/container container \
  && mkdir -p /opt/java
-
 
 # Add Sparked certificate authority
 ADD ca.crt /usr/local/share/ca-certificates/sparked-ca.crt
 RUN chmod 644 /usr/local/share/ca-certificates/sparked-ca.crt && update-ca-certificates
 
-# Set user that will run the entrypoint script, and overwrite USER, HOME and PATH environment variables
-# We need to inject the path to the Java binaries in the PATH environment variable
+# Set user that will run the entrypoint script, and overwrite USER, HOME, and PATH environment variables
 USER container
-ENV  USER=container HOME=/home/container PATH="$PATH:/opt/java/bin" LANG=C.UTF-8
+ENV USER=container HOME=/home/container PATH="$PATH:/opt/java/bin" LANG=C.UTF-8
 
-WORKDIR     /home/container
+WORKDIR /home/container
 
-COPY        ./entrypoint.sh /entrypoint.sh
+COPY ./entrypoint.sh /entrypoint.sh
 
-CMD         ["/bin/bash", "/entrypoint.sh"]
+CMD ["/bin/bash", "/entrypoint.sh"]
+
 
