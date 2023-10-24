@@ -3,32 +3,27 @@
 # Image: ghcr.io/nordblade/citrus-images:java-jre20
 # ----------------------------------
 
-FROM        debian:bullseye-slim
+# Use a minimal base image
+FROM alpine:latest
 
-LABEL       author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
+LABEL author="Citrusnode" maintainer="info@citrusnode.com"
 
-RUN apt-get update -y \
- && apt-get install fontconfig iproute2 curl ca-certificates tar -y \
- && useradd -d /home/container -m container \
- && mkdir -p /opt/java
+# Install required packages
+RUN apk update && apk add --no-cache openjdk11-jre-headless
 
-# Download pre-built Temurin JRE binaries
-ADD https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.1%2B9/OpenJDK20U-jre_x64_linux_hotspot_20.0.1_9.tar.gz /opt/java/java.tar.gz
-RUN tar -C /opt/java --strip-components=1 -xzf /opt/java/java.tar.gz \
- && rm -f /opt/java/java.tar.gz
-
-# Add Sparked certificate authority
-ADD ca.crt /usr/local/share/ca-certificates/sparked-ca.crt
-RUN chmod 644 /usr/local/share/ca-certificates/sparked-ca.crt && update-ca-certificates
-
-# Set user that will run the entrypoint script, and overwrite USER, HOME and PATH environment variables
-# We need to inject the path to the Java binaries in the PATH environment variable
+# Set user that will run the entrypoint script
+RUN adduser -D -h /home/container container
 USER container
-ENV  USER=container HOME=/home/container PATH="$PATH:/opt/java/bin" LANG=C.UTF-8
 
-WORKDIR     /home/container
+# Set the working directory
+WORKDIR /home/container
 
-COPY        ./entrypoint.sh /entrypoint.sh
+# Copy the entrypoint script
+COPY ./entrypoint.sh /entrypoint.sh
 
-CMD         ["/bin/bash", "/entrypoint.sh"]
+# Expose any necessary ports
+EXPOSE 25565
+
+CMD ["/bin/ash", "/entrypoint.sh"]
+
 

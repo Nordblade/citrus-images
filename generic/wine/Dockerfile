@@ -5,7 +5,7 @@
 
 FROM alpine:latest
 
-LABEL author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
+LABEL author="Citrusnode" maintainer="info@citrusnode.com"
 
 RUN apk update
 RUN apk add wget && apk add unzip bash

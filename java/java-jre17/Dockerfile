@@ -5,7 +5,7 @@
 
 FROM        debian:bullseye-slim
 
-LABEL       author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
+LABEL       author="Citrusnode" maintainer="info@citrusnode.com"
 
 RUN apt-get update -y \
  && apt-get install fontconfig iproute2 curl ca-certificates tar font-manager -y \

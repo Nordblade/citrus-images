@@ -5,7 +5,7 @@
 
 FROM debian:bullseye-slim
 
-LABEL author="DevOps Team at Citrusnode" maintainer="sysadmin@citrusnode.com"
+LABEL author="Citrusnode" maintainer="info@citrusnode.com"
 
 ENV DEBIAN_FRONTEND noninteractive
 
