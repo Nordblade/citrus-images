@@ -16,15 +16,14 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-          - 8
-#          - 8j9
-          - 11
-#          - 11j9
-          - 16
-#          - 16j9
-          - 17
-          - 19
-          - 21
+          - anti-malware
+          - java-jre11
+          - java-jre16
+          - java-jre17
+          - java-jre18
+          - java-jre19
+          - java-jre20
+          - java-jre8
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-qemu-action@v3
